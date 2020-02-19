@@ -1,0 +1,85 @@
+button {
+    width: 150px;
+    height: 50px;
+    background: #6876D6;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+
+}
+
+.container1 {
+    border: none;
+    background: #F4F7FB;
+    width: 650px;
+    height: 790px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 0 20px -5px #808080;
+
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: #F0F5F9;
+}
+
+.con1 {
+    padding: 20px;
+    background: #6876D6;
+    font-family: sans-serif;
+}
+
+label {
+    color: #444444;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+}
+h1 {
+    font-size: 40px;
+    padding: 10px;
+    color: #FF4938;
+    margin: 200px 0px;
+    background: #DEE1ED;
+}
+.bsi {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    width: 110px;
+    background: #6876D6;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.Msr {
+    width: 620px;
+    background: #6876D6;
+    color: #ffffff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    font-size: 45px;
+    padding: 15px;    
+}
