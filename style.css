@@ -1,7 +1,7 @@
 button {
     width: 150px;
     height: 50px;
-    background: #6876D6;
+    background: #00AFFA;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -11,21 +11,20 @@ button {
 input {
     width: 200px;
     height: 30px;
-    border: 1px solid #DEDEDE;
+    border: 1px solid #D6DCE8;
     border-radius: 3px;
+    background: #F6F8FE;
     font-size: 15px;
 
 }
 
 .container1 {
     border: none;
-    background: #F4F7FB;
+    background: #EEF2FC;
     width: 650px;
     height: 790px;
     border-radius: 20px;
-    font-family: sans-serif;
     border: 1px solid #CCCCCC;
-    box-shadow: 0 0 10px -5px #808080;
 
 }
 
@@ -36,13 +35,12 @@ html, body {
 }
 
 body {
-    background: #F0F5F9;
+    background: #EEF2FC;
 }
 
 .con1 {
     padding: 20px;
-    background: #6876D6;
-    font-family: sans-serif;
+    background: #00AFFA;
 }
 
 label {
@@ -63,10 +61,10 @@ h1 {
 }
 .bsi {
     position: absolute;
-    top: 120px;
-    right: 20px;
+    top: 425px;
+    right: 250px;
     width: 110px;
-    background: #6876D6;
+    background: #00AFFA;
     color: #ffffff;
     border-radius: 5px;
     text-align: center;
@@ -75,11 +73,16 @@ h1 {
 
 .Msr {
     width: 620px;
-    background: #6876D6;
+    background: #00AFFA;
     color: #ffffff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     text-align: center;
     font-size: 45px;
     padding: 15px;    
+}
+
+h2 {
+    color: #2d2d2d;
+    font-size: 30px;
 }
