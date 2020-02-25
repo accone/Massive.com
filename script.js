@@ -18,36 +18,28 @@ function writeRegister(){
 
 	if(cache_name.value=="") {
         alert("You did not enter your name!");
-        saveRegister_cache() = false;
-        loadRegister_cache() = false;
     }
 
     else if(cache_surname.value=="") {
         alert("You did not enter your surname!");
-        saveRegister_cache() = false;
-        loadRegister_cache() = false;
     }
 
     else if(cache_email.value=="") {
         alert("You have not entered your e-mail!");
-        saveRegister_cache() = false;
-        loadRegister_cache() = false;
     }
 
     else if(cache_password.value=="") {
         alert("You did not enter your password!");
-        saveRegister_cache() = false;
-        loadRegister_cache() = false;
     }
 
     else if(cache_password.lenght < 8) {
         alert("Less than 6 digits cannot be entered!");
-        saveRegister_cache() = false;
-        loadRegister_cache() = false;
     }
 
     else if(cache_password.lenght > 16) {
         alert("Password must contain less than 12 numbers!");
+    }
+    else if(value=="") {
         saveRegister_cache() = false;
         loadRegister_cache() = false;
     }
