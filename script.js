@@ -2,50 +2,39 @@ let register_caches = [];
 loadRegister_cache();
 
 document.getElementById('add').onclick = function(){
-    let cache_name = document.getElementById('name');
-    let cache_surname = document.getElementById('surname');
-    let cache_email = document.getElementById('email');
-    let cache_password = document.getElementById('password');
+    let name = document.getElementById('name');
+    let surname = document.getElementById('surname');
+    let email = document.getElementById('email');
+    let password = document.getElementById('password');
 
-let register_cache = {
-	name : cache_name.value,
-	surname : cache_surname.value,
-	email : cache_email.value,
-	password : cache_password.value,
+let cache = {
+    name : name.value,
+    surname : surname.value,
+    email : email.value,
+    password : password.value,
 }
 
-function writeRegister(){
-
-	if(cache_name.value=="") {
+    if(name.value='') {
         alert("You did not enter your name!");
     }
 
-    else if(cache_surname.value=="") {
+    else if(surname.value='') {
         alert("You did not enter your surname!");
     }
 
-    else if(cache_email.value=="") {
+    else if(email.value='') {
         alert("You have not entered your e-mail!");
     }
 
-    else if(cache_password.value=="") {
+    else if(password.value='') {
         alert("You did not enter your password!");
     }
 
-    else if(cache_password.lenght < 8) {
+    else if(password.lenght < 8) {
         alert("Less than 6 digits cannot be entered!");
     }
 
-    else if(cache_password.lenght > 16) {
-        alert("Password must contain less than 12 numbers!");
-    }
-    else if(value=="") {
-        saveRegister_cache() = false;
-        loadRegister_cache() = false;
-    }
-}
-
-register_caches.push(register_cache)
+register_caches.push(cache)
 saveRegister_cache();
 }
 
