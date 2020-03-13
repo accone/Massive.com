@@ -1,31 +1,40 @@
 button {
-    width: 150px;
+    width: 200px;
     height: 50px;
-    background: #00AFFA;
+    background: linear-gradient(50deg, #5025ED, #8649E8);
     color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 100px;
     font-size: 25px;
     font-family: Ubuntu;
+}
+button:hover {
+    background: linear-gradient(50deg, #6039EF, #9660EB);
+    box-shadow: 0 0 10px 0 #808080;
+}
+.bsi:hover {
+    background: linear-gradient(50deg, #6039EF, #9660EB);
+    box-shadow: 0 0 10px 0 #808080;
 }
 
 input {
     width: 200px;
     height: 30px;
-    border: 1px solid #D6DCE8;
-    border-radius: 3px;
-    background: #F6F8FE;
+    border: 1px solid #DEDEDE;
+    border-radius: 2px;
     font-size: 15px;
-
+}
+input:focus {
+    box-shadow: 0 0 5px 0 #0066dd;
 }
 
 .container1 {
     border: none;
-    background: #EEF2FC;
+    background: #fff;
     width: 650px;
     height: 790px;
     border-radius: 20px;
-    border: 1px solid #CCCCCC;
+    border: 1px solid #EDEDED;
 
 }
 
@@ -36,12 +45,12 @@ html, body {
 }
 
 body {
-    background: #EEF2FC;
+    background: #FCFCFC;
 }
 
 .con1 {
     padding: 20px;
-    background: #00AFFA;
+    background: linear-gradient(50deg, #5025ED, #8649E8);
 }
 
 label {
@@ -56,25 +65,23 @@ a {
 h1 {
     font-size: 40px;
     padding: 10px;
-    color: #FF4938;
+    color: #FFF;
     margin: 200px 0px;
-    background: #DEE1ED;
+    background: linear-gradient(50deg, #5025ED, #8649E8);
 }
 .bsi {
-    position: absolute;
-    top: 425px;
-    right: 250px;
-    width: 110px;
-    background: #00AFFA;
+    padding: 10px;
+    background: linear-gradient(50deg, #5025ED, #8649E8);
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 100px;
     text-align: center;
-    padding: 5px;
+    width: 150px;
+
 }
 
 .Msr {
     width: 620px;
-    background: #00AFFA;
+    background: linear-gradient(50deg, #5025ED, #8649E8);
     color: #ffffff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
