@@ -22,7 +22,7 @@ document.getElementById('add').onclick = function(){
         }
 
         else if(email.value=="") {
-                alert("You haven't entered your e-mail!");
+                alert("You didn't enter your e-mail!");
         }
 
         else if(password.value=="") {
