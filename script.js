@@ -1,47 +1,42 @@
-let register_caches = [];
-loadRegister_cache();
+var register_caches = [];
 
 document.getElementById('add').onclick = function(){
-    let name = document.getElementById('name');
-    let surname = document.getElementById('surname');
-    let email = document.getElementById('email');
-    let password = document.getElementById('password');
+    var name = document.getElementById('name');
+    var surname = document.getElementById('surname');
+    var email = document.getElementById('email');
+    var password = document.getElementById('password');
 
-let cache = {
-    name : name.value,
-    surname : surname.value,
-    email : email.value,
-    password : password.value,
-}
-
-    if(name.value='') {
-        alert("You did not enter your name!");
+    var cache = {
+        name : name.value,
+        surname : surname.value,
+        email : email.value,
+        password : password.value,
     }
 
-    else if(surname.value='') {
-        alert("You did not enter your surname!");
-    }
+        if(name.value=="") {
+                alert("you didn't enter your name!");
+        }
 
-    else if(email.value='') {
-        alert("You have not entered your e-mail!");
-    }
+        else if(surname.value=="") {
+                alert("You didn't enter your surname!");
+        }
 
-    else if(password.value='') {
-        alert("You did not enter your password!");
-    }
+        else if(email.value=="") {
+                alert("You haven't entered your e-mail!");
+        }
 
-    else if(password.lenght < 8) {
-        alert("Less than 6 digits cannot be entered!");
-    }
+        else if(password.value=="") {
+                alert("You didn't enter your password!");
+        }
 
-register_caches.push(cache)
-saveRegister_cache();
+        else if(password.lenght < 6) {
+                alert("Less than 6 digits cannot be entered!");
+        }
+
+    register_caches.push(cache)
+    saveRegister_cache();
 }
 
 function saveRegister_cache(){
-    localStorage.setItem('register_caches', JSON.stringify(register_caches));    
-}
-
-function loadRegister_cache(){
-    if (localStorage.getItem('register_caches')) register_caches = JSON.parse(localStorage.getItem('register_caches'));
+    localStorage.setItem('register_caches', JSON.stringify(register_caches));
 }
