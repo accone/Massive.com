@@ -70,7 +70,7 @@ h1 {
     font-size: 40px;
     color: #FFF;
     margin: 200px 0px;
-    background: #CC0000;
+    background: linear-gradient(50deg, #5025ED, #8649E8);
     height: 30%;
 }
 .bsi {
@@ -99,12 +99,4 @@ h1 {
 h2 {
     color: #2d2d2d;
     font-size: 30px;
-}
-.alerts {
-    width: 600px;
-    height: 400px;
-    background: linear-gradient(50deg, #5025ED, #8649E8);
-    color: #ffffff;
-    text-align: center;
-    font-size: 25px;
 }
