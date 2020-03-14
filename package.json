@@ -1,3 +1,0 @@
-echo ":github: Bearer GH_TOKEN" >> ~/.gem/credentials
-gem push --key github --host https://rubygems.pkg.github.com/accone Massive.com-1.0.0.gem
-gem build Massive.com.gemspec
