@@ -12,25 +12,24 @@ document.getElementById('add').onclick = function(){
         email : email.value,
         password : password.value,
     }
-
-        if(name.value=="") {
-                alert("you didn't enter your name!");
+        else if(name=="") {
+            alert("you didn't enter your name!");
         }
 
-        else if(surname.value=="") {
-                alert("You didn't enter your surname!");
+        else if(surname=="") {
+            alert("You didn't enter your surname!");
         }
 
-        else if(email.value=="") {
-                alert("You didn't enter your e-mail!");
+        else if(email=="") {
+            alert("You didn't enter your e-mail!");
         }
 
-        else if(password.value=="") {
-                alert("You didn't enter your password!");
+        else if(password=="") {
+            alert("You didn't enter your password!");
         }
 
         else if(password.lenght < 6) {
-                alert("Less than 6 digits cannot be entered!");
+            alert("Less than 6 digits cannot be entered!");
         }
 
     register_caches.push(cache)
