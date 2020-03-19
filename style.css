@@ -1,10 +1,7 @@
 button {
     width: 200px;
     height: 50px;
-    border-right: 2px solid #8649E8;
-    border-left: 2px solid #5025ED;
-    border-bottom: 2px solid #6F35ED;
-    border-top: 2px solid #6F35ED;
+    border: 2px solid #00CC77;
     color: #3d3d3d;
     border-radius: 100px;
     font-size: 25px;
@@ -12,21 +9,23 @@ button {
     background: #fff;
 }
 button:hover {
-    background: linear-gradient(50deg, #5025ED, #8649E8);
-    color: #fff;
+    background: #eee;
+    color: #3d3d3d;
     border: none;
     box-shadow: 0 0 10px 0 #808080;
+    border: 2px solid #00CC77;
 }
 .bsi:hover {
-    background: linear-gradient(50deg, #5025ED, #8649E8);
-    color: #fff;
+    background: #eee;
+    color: #3d3d3d;
     border: none;
     box-shadow: 0 0 10px 0 #808080;
+    border: 2px solid #00CC77;
 }
 
 input {
-    width: 200px;
-    height: 30px;
+    width: 300px;
+    height: 33px;
     border: 1px solid #DEDEDE;
     border-radius: 2px;
     font-size: 15px;
@@ -39,9 +38,9 @@ input:focus {
     border: none;
     background: #fff;
     width: 900px;
-    border-radius: 20px;
+    border-radius: 5px;
     border: 1px solid #EDEDED;
-    height: 750px;
+    height: 900px;
 }
 html, body {
     padding: 0;
@@ -54,7 +53,7 @@ body {
 
 .con1 {
     padding: 20px;
-    background: linear-gradient(50deg, #5025ED, #8649E8);
+    background: #00CC77;
 }
 
 label {
@@ -66,19 +65,9 @@ a {
     text-decoration: none;
     font-size: 25px;
 }
-h1 {
-    font-size: 40px;
-    color: #FFF;
-    margin: 200px 0px;
-    background: linear-gradient(50deg, #5025ED, #8649E8);
-    height: 30%;
-}
 .bsi {
     padding: 10px;
-    border-right: 2px solid #8649E8;
-    border-left: 2px solid #5025ED;
-    border-bottom: 2px solid #6F35ED;
-    border-top: 2px solid #6F35ED;
+    border: 2px solid #00CC77;
     color: #3d3d3d;
     border-radius: 100px;
     text-align: center;
@@ -87,16 +76,11 @@ h1 {
 
 .Msr {
     width: 870px;
-    background: linear-gradient(50deg, #5025ED, #8649E8);
+    background: #00CC77;
     color: #ffffff;
     text-align: center;
     font-size: 45px;
     padding: 15px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px
-}
-
-h2 {
-    color: #2d2d2d;
-    font-size: 30px;
 }
