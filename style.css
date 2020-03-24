@@ -39,10 +39,10 @@ input:focus {
 .container1 {
     border: none;
     background-image: url(img/fon.jpg);
-    width: 700px;
+    width: 800px;
     border-radius: 5px;
     border: none;
-    height: 750px;
+    height: 850px;
 }
 
 html, body {
@@ -79,7 +79,7 @@ a {
 }
 
 .Msr {
-    width: 670px;
+    width: 770px;
     background: #2A4480;
     text-align: center;
     font-size: 45px;
