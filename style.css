@@ -1,18 +1,12 @@
-button {
-    width: 200px;
-    height: 50px;
+.bsi {
+    padding: 10px;
     border: 2px solid #2A4480;
     border-radius: 100px;
-    font-size: 25px;
-    font-family: Ubuntu;
-    background: none;
+    text-align: center;
+    width: 200px;
     color: #FFF;
-    outline: none;
-}
-
-button:hover {
-    border: 2px solid #00CCA0;
-    outline: none;
+    background: none;
+    font-size: 25px;
 }
 
 .bsi:hover {
@@ -29,7 +23,6 @@ input {
     background: none;
     color: #ffffff;
     outline: none;
-
 }
 
 input:focus {
@@ -71,14 +64,6 @@ label {
 a {
     text-decoration: none;
     font-size: 25px;
-}
-.bsi {
-    padding: 10px;
-    border: 2px solid #2A4480;
-    border-radius: 100px;
-    text-align: center;
-    width: 150px;
-    color: #FFF;
 }
 
 .Msr {
