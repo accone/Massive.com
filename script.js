@@ -12,7 +12,7 @@ document.getElementById('add').onclick = function(){
         email : email.value,
         password : password.value,
     }
-        else if(name=="") {
+        if(name=="") {
             alert("you didn't enter your name!");
         }
 
