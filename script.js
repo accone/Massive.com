@@ -1,10 +1,10 @@
 var register_caches = [];
 
-document.getElementById('add').onclick = function(){
-    var name = document.getElementById('name');
-    var surname = document.getElementById('surname');
-    var email = document.getElementById('email');
-    var password = document.getElementById('password');
+document.getElementById('add').onclick = function(){  
+        var name = document.getElementById('name');
+        var surname = document.getElementById('surname');
+        var email = document.getElementById('email');
+        var password = document.getElementById('password');
 
     var cache = {
         name : name.value,
@@ -12,30 +12,18 @@ document.getElementById('add').onclick = function(){
         email : email.value,
         password : password.value,
     }
-        if(name=="") {
-            alert("you didn't enter your name!");
-        }
 
-        else if(surname=="") {
-            alert("You didn't enter your surname!");
-        }
-
-        else if(email=="") {
-            alert("You didn't enter your e-mail!");
-        }
-
-        else if(password=="") {
-            alert("You didn't enter your password!");
-        }
-
-        else if(password.lenght < 6) {
-            alert("Less than 6 digits cannot be entered!");
-        }
+    if (name.length != 0 && surname.length != 0 && email.length != 0 && password.length != 0){
+        alert("An error has occurred! Most likely you did not enter all the data!");
+        $('#submit').attr('disabled', 'disabled');       
+    }
 
     register_caches.push(cache)
     saveRegister_cache();
 }
 
 function saveRegister_cache(){
-    localStorage.setItem('register_caches', JSON.stringify(register_caches));
+    if (name.length != 1 && surname.length != 1 && email.length != 1 && password.length != 1){    
+        localStorage.setItem('register_caches', JSON.stringify(register_caches));
+    }
 }
