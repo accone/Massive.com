@@ -25,7 +25,7 @@
                             <p>
                                 <div class="form-group">
                                     <label for="name">Enter your name:</label>
-                                    <input autocomplete="off" type="text" class="form-control" id="name" placeholder=" ">
+                                    <input onkeyup="checkParams()" autocomplete="off" type="text" class="form-control" id="name" placeholder="">
                                 </div>
                             </p>
                         </center>
@@ -33,7 +33,7 @@
                             <p>
                                 <div class="form-group">
                                     <label for="surname">Enter your surname:</label>
-                                    <input autocomplete="off" type="text" class="form-control" id="surname" placeholder=" ">
+                                    <input onkeyup="checkParams()" autocomplete="off" type="text" class="form-control" id="surname" placeholder="">
                                 </div>
                             </p>
                         </center>
@@ -41,7 +41,7 @@
                         <center>
                             <div class="form-group">
                                 <label for="e-mail">Enter your e-mail:</label>
-                                <input autocomplete="off" type="email" class="form-control" id="email" placeholder=" ">
+                                <input onkeyup="checkParams()" autocomplete="off" type="email" class="form-control" id="email" placeholder="">
                             </div>
                         </center>
 
@@ -49,25 +49,25 @@
                             <p>
                                 <div class="form-group">
                                     <label for="password">Enter your password:</label>
-                                    <input autocomplete="off" type="text" class="form-control" id="password" placeholder=" ">
+                                    <input onkeyup="checkParams()" autocomplete="off" type="text" class="form-control" id="password" placeholder="">
                                 </div>
                             </p>
                         </center>
 
                         <center>
-                            <button type="submit" class="btn btn-primary" id="add">Register me</button>
+                            <button type="submit" onclick="this.disabled=true;" class="bsi" id="add">Register me</button>
                         </center>
 
                         <p>
                         	<p style="font-size: 27px;">Already have an account?</p>
-                            <a href="https://accounts.google.com/signin/v2/identifier?hl=ru&continue=https://accone.github.io/online.net%3Fhl%3Dru&flowName=GlifWebSignIn&flowEntry=AddSession" class="bsi" id="signin">Sign in</a>
+                            <a href="#" class="bsi" id="signin">Sign in</a>
                         </p>
                     </form>
                     </p>
             </div>
         </div>
 
-        <script src="script.js"></script>
+        <script src="script.js" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </body>
 
 </html>
