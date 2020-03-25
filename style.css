@@ -7,14 +7,17 @@ button {
     font-family: Ubuntu;
     background: none;
     color: #FFF;
+    outline: none;
 }
 
 button:hover {
     border: 2px solid #00CCA0;
+    outline: none;
 }
 
 .bsi:hover {
     border: 2px solid #00CCA0;
+    outline: none;
 }
 
 input {
@@ -39,10 +42,10 @@ input:focus {
 .container1 {
     border: none;
     background-image: url(img/fon.jpg);
-    width: 800px;
+    width: 750px;
     border-radius: 5px;
     border: none;
-    height: 850px;
+    height: 800px;
 }
 
 html, body {
@@ -79,7 +82,7 @@ a {
 }
 
 .Msr {
-    width: 770px;
+    width: 720px;
     background: #2A4480;
     text-align: center;
     font-size: 45px;
