@@ -4,70 +4,92 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Welcome to the Online</title>
+    <title>Welcome to the Postline</title>
     <link rel="icon" href="img/icon.png">  
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
+	<div class="preloader">
+  		<div class="preloader__image"></div>
+	</div>
+
     <div class="con1">
-        <center><font size="7">Start your social life in the Online! Register to continue</font></center>
+        <center><font size="7" color="#fff" class="custom_selection">Start your social life in Postline! Register to continue</font></center>
     </div>
     <br>
     <center>
-        <div class="container1">
-          <div class="Msr">Register</div>
             <div class="container">
-                <p>
-                    <form>
+                    <form action="" style="background: none; width: 700px; height: 750px; border-radius: 3px;">
                         <center>
+                                <div style="height: 10px;"></div>
                             <p>
                                 <div class="form-group">
-                                    <label for="name">Enter your name:</label>
-                                    <input autocomplete="off" type="text" class="form-control" id="name" placeholder="">
+                                    <label for="name" class="custom_selection">Enter your name:</label>
+                                    <p>
+                                    	<input autocomplete="off" type="text" class="form-control" id="name" placeholder="">
+                                    </p>
                                 </div>
                             </p>
                         </center>
                         <center>
                             <p>
                                 <div class="form-group">
-                                    <label for="surname">Enter your surname:</label>
-                                    <input autocomplete="off" type="text" class="form-control" id="surname" placeholder="">
+                                    <label for="surname" class="custom_selection">Enter your surname:</label>
+                                	<p>
+                                    	<input autocomplete="off" type="text" class="form-control" id="surname" placeholder="">
+                                    </p>
                                 </div>
                             </p>
                         </center>
 
                         <center>
                             <div class="form-group">
-                                <label for="e-mail">Enter your e-mail:</label>
-                                <input autocomplete="off" type="email" class="form-control" id="email" placeholder="">
+                                <label for="e-mail" class="custom_selection">Enter your e-mail:</label>
+                                <p>
+                                	<input autocomplete="off" type="email" class="form-control" id="email" placeholder="">
+                                        <span id="status"></span>
+                                </p>	
                             </div>
                         </center>
 
                         <center>
                             <p>
                                 <div class="form-group">
-                                    <label for="password">Enter your password:</label>
-                                    <input autocomplete="off" type="text" class="form-control" id="password" placeholder="">
+                                    <label for="password" class="custom_selection">Enter your password:</label>
+                                    <p>
+                                    	<input autocomplete="off" type="password" class="form-control" id="password" placeholder="">
+                                    </p>
                                 </div>
                             </p>
                         </center>
 
                         <center>
-                            <button type="submit" onclick="this.disabled=true;" class="bsi" id="add">Register me</button>
+                                <button style="top: 15px; position: relative;" type="submit" class="bsi">
+                                        <a href="" type="submit" id="add" onclick="right()" class="custom_selection">Register me</a>
+                                </button>
                         </center>
 
                         <p>
-                        	<p style="font-size: 27px;">Already have an account?</p>
-                            <a href="#" class="bsi" id="signin">Sign in</a>
+                                <a style="font-size: 35px; top: 35px; position: relative;" href="" id="signin">Already have an account?</a>
                         </p>
                     </form>
-                    </p>
-            </div>
         </div>
 
-        <script src="script.js" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>
+    	window.onload = function () {
+      		document.body.classList.add('loaded_hiding');
+      		window.setTimeout(function () {
+        	document.body.classList.add('loaded');
+        	document.body.classList.remove('loaded_hiding');
+      		}, 500);
+    	}
+  		</script>
+
 </body>
 
 </html>
