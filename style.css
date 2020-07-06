@@ -1,77 +1,97 @@
 .bsi {
     padding: 10px;
-    border: 2px solid #2A4480;
+    border: 2px solid #00CCA0;
     border-radius: 100px;
     text-align: center;
-    width: 200px;
-    color: #FFF;
+    width: 300px;
+    color: #fff;
     background: none;
-    font-size: 25px;
-}
-
-.bsi:hover {
-    border: 2px solid #00CCA0;
-    outline: none;
+    font-size: 35px;
 }
 
 input {
-    width: 300px;
-    height: 33px;
-    border: 2px solid #2A4480;
+    width: 500px;
+    height: 53px;
+    border: 2px solid #00CCA0;
     border-radius: 100px;
-    font-size: 15px;
+    font-size: 25px;
     background: none;
-    color: #ffffff;
+    color: #fff;
     outline: none;
 }
 
 input:focus {
-    border: 2px solid #00CCA0;
-    color: #ffffff;
-    background: none;
-    outline: none;
-}
-
-.container1 {
-    border: none;
-    background-image: url(img/fon.jpg);
-    width: 750px;
-    border-radius: 5px;
-    border: none;
-    height: 800px;
+        border: 2px solid #fff;
 }
 
 html, body {
     padding: 0;
     margin: 0;
     font-family: Ubuntu;
-    color: #FFF;
-}
-
-body {
-    background: #FCFCFC;
+    background: url(img/bg.png);
+    color: #fff;
 }
 
 .con1 {
     padding: 20px;
     background: #2A4480;
+    color: #fff;
 }
 
 label {
-    font-size: 25px;
+    font-size: 35px;
+    color: #fff;
 }
 
 a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 35px;
+    color: #fff;
 }
 
-.Msr {
-    width: 720px;
+a:hover {
+        color: #1FFFCE;
+}
+
+.custom_selection::selection {
     background: #2A4480;
-    text-align: center;
-    font-size: 45px;
-    padding: 15px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px
+    color: #00CCA0;
+}
+
+a::selection {
+    background: #2A4480;
+    color: #00CCA0;
+}
+
+input::selection {
+    background: #2A4480;
+    color: #00CCA0;
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1001;
+}
+
+.preloader__image {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  top: -8%;
+  left: 0%;
+  background: url('img/load.png')
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
 }
